@@ -24,9 +24,9 @@ function squreRoot = Mysqrt(originalNum)
     yOld = originalNum; % this magnitude can make sure that function execute the loop for at least one time
 
     %% The loop
-    while abs((yNew - yOld) / yNew) > 12 * eps
+    while any(abs((yNew - yOld) ./ yNew) > 12 * eps) % make sure all elements meet the accurate condition
         yOld = yNew;
-        yNew = (yNew + originalNum / yNew) / 2; % if the accurate condition is not meet, execute one more time
+        yNew = (yNew + originalNum ./ yNew) / 2; % if the accurate condition is not meet, execute one more time
     end
 
     %% Return
