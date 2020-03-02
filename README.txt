@@ -11,6 +11,8 @@ User can check a whole discription with 2 methods:
 1: press 'F1' after typing 'Mybubblesort'.
 2: type 'Mybubblesort' after 'help.
 User can sort a vector 'vectorIn' with command 'Mybubblesort(vectorIn)'
+or check the function with 30 random numbers using command 'sqrtPlot'
+While using 'sqrtPlot', all results and errors will be displayed on command window.
 
 Problem3:
 All comments of this function are also written behind the 'function' Line.
